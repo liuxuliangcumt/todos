@@ -28,8 +28,11 @@ dependencies:
     sdk: flutter
   #状态管理
   provider: ^4.0.1
+  #本地存储
+  shared_preferences: ^0.5.6+2
 
-
+  #环形列表
+  circle_list: ^1.0.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0

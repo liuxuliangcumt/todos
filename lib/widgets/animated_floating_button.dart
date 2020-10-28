@@ -3,6 +3,9 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:todos/util/full_screen_dialog.dart';
+import 'package:todos/util/icon_list_util.dart';
+
+import 'bottom_show_widget.dart';
 
 class AnimatedFloatingButton extends StatefulWidget {
   final Color bgColor;
@@ -41,7 +44,7 @@ class _AnimatedFloatingButtonState extends State<AnimatedFloatingButton>
         return Transform.translate(
           offset: Offset(0, (_animation.value) * 56),
           child: Transform.scale(
-            scale: 1 - _animation.value * 2,
+            scale: 1 - _animation.value,
             child: child,
           ),
         );
